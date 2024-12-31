@@ -7,7 +7,7 @@ import styles from './styles.module.css';
 
 export default function Home() {
   const ref = useRef<ReturnType<typeof setTimeout>[]>([]);
-  const [item, set] = useState<string>('Rushikesh Pandit');
+  const [item, set] = useState<string>('Gurpreet Kaur');
   const transitions = useTransition(item, {
     from: {
       opacity: 0,
@@ -25,7 +25,7 @@ export default function Home() {
   const reset = useCallback(() => {
     ref.current.forEach(clearTimeout);
     ref.current = [];
-    ref.current.push(setTimeout(() => set('Rushikesh Pandit'), 2000));
+    ref.current.push(setTimeout(() => set('Gurpreet Kaur'), 2000));
   }, []);
 
   useEffect(() => {
@@ -48,7 +48,7 @@ export default function Home() {
           </animated.div>
         ))}
         <p className="mx-20 mt-5 text-[#42446E] text-7xl font-bold">I build things for </p>
-        <p className="mx-20 text-[#42446E] text-7xl font-bold">web and mobile</p>
+        <p className="mx-20 text-[#42446E] text-7xl font-bold">mobile and web</p>
       </div>
     );
   };

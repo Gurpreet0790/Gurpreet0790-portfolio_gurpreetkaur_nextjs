@@ -29,7 +29,7 @@ export default function SideProjects() {
   return (
     <div id="sideprojects">
       <div className="pt-16 h-auto container my-auto mx-auto bg-white items-center justify-evenly flex-col">
-        <h2 className="text-[#42446E]  font-bold, text-5xl">Side Projects</h2>
+        <h2 className="text-[#42446E]  font-bold, text-5xl">Projects</h2>
         {renderProject()}
       </div>
     </div>

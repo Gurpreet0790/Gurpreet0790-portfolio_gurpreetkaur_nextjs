@@ -20,7 +20,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Rushikesh Pandit - Portfolio',
+  title: 'Gurpreet Kaur - Portfolio',
   description: 'Software Developer',
 };
 
@@ -36,7 +36,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         <SideProjects />
         <Contact />
         <div className={styles.floatingbuttondiv}>
-          <a className={styles.fb} href="/Rushikesh_resume.pdf" target="_blank" rel="noopener noreferrer" download={true}>
+          <a className={styles.fb} href="/Gurpreet_Resume.pdf" target="_blank" rel="noopener noreferrer" download={true}>
             <Image src={'/downloadpdf.svg'} alt={"downloadpdf"} width={50} height={50} className="h-14 w-14" />
           </a>
         </div>
